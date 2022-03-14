@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import {BsJustify, BsBoxArrowRight} from 'react-icons/bs'
+import {BsFillLightningFill, BsJustify, BsBoxArrowRight} from 'react-icons/bs'
 import './index.css'
 
 const Header = () => (
@@ -11,16 +11,18 @@ const Header = () => (
     />
     <ul className="nav-icon-container">
       <Link to="/">
-        <li>Hello</li>
-      </Link>
-      <Link to="/">
         <li>
-          <BsJustify />
+          <BsFillLightningFill className="nav-icon" />
         </li>
       </Link>
       <Link to="/">
         <li>
-          <BsBoxArrowRight />
+          <BsJustify className="nav-icon" />
+        </li>
+      </Link>
+      <Link to="/">
+        <li>
+          <BsBoxArrowRight className="nav-icon" />
         </li>
       </Link>
     </ul>

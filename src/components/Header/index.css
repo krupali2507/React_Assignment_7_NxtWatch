@@ -1,8 +1,33 @@
 .navbar-container {
   display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-icon-container {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 200px;
+}
+
+.nav-icon {
+  font-size: 40px;
+}
+
+.website-logo {
+  height: 40px;
+}
+
+@media (min-width: 768px) {
+  .website-logo {
+    width: 200px;
+    height: 60px;
+  }
+
+  .nav-icon-container {
+    display: none;
+  }
 }
